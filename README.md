@@ -77,8 +77,12 @@ Example of query using `skip`, `limit` and `populate`.
 + Check how many products are left in the inventory by product ID .
 + Update the inventory with inStock field -1 when order is sold. 
 
-Each functionality will be one route with logic. You are free to organize it the way you like. 
+Each bonus functionality will be one route with logic. You are free to organize it the way you like. 
 Use the previous example projects as a base to build the above functionality. 
+
+**Note: mutliple solutions are possible, you can choose which solution you prefer.**
+
+
 
 
 
