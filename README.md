@@ -1,5 +1,5 @@
 # references-crud-assignment
-This exercise will allow you to recap what we've learned so far. 
+In this exercise we will practice pagination and references. 
 
 ## Assignment
 Let's build an order management API. 😊
