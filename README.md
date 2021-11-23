@@ -78,7 +78,7 @@ Example of query using `skip`, `limit` and `populate`.
 Each bonus functionality will be one route with logic. You are free to organize it the way you like. 
 Use the previous example projects as a base to build the above functionality. 
 
-**Note: mutliple solutions are possible, you can choose which solution you prefer.**
+**Note: multiple solutions are possible, you can choose which solution you prefer.**
 
 
 
