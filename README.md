@@ -38,7 +38,7 @@ Example of a reference:
 
 
 ### 3. Assignment CRUD 
-Build an API for order management. The following functionality is required: 
+Let's build our API for order management. The following functionality is required: 
 
 #### Task 1. Inserting customers 
 Create a new `post` route which allows you to add a new customer into the database. 
@@ -60,10 +60,19 @@ Create a new `get` route which allows you to fetch a list of all the orders in t
 Use the `limit` and `skip` methods to paginate the results. 
 
 #### Task 6 List orders by Customer
-Create a new `get` route which allows you to fetch a list of all the orders by customer. 
+Create a new `get` route which allows you to fetch a list of all the orders by customer. Make sure you include the customer using the `populate` function.
+
+Example of query using skip, limit and include. 
+````javascript
+    const results = await mySchema.find({})
+    .populate('other')
+    .skip(3)
+    .limit(3)
+````
 
 
-### 3. Bonus - adding inventory records
+
+### 3. OPTIONAL Bonus - adding inventory records
 + Inserting Inventory records
 + Check how many products are left in the inventory by product ID .
 + Update the inventory with inStock field -1 when order is sold. 
