@@ -72,6 +72,12 @@ Example of query using `skip`, `limit` and `populate`.
 
 
 
+
+
+
+
+
+
 ### 3. OPTIONAL Bonus - adding inventory records 
 + Inserting Inventory records
 + Check how many products are left in the inventory by product ID .
