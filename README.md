@@ -69,13 +69,11 @@ Example of query using `skip`, `limit` and `populate`.
     .skip(3)
     .limit(3)
 ````
-
-
-
-
-
-
-
+\
+\
+\
+\
+\
 
 
 ### 3. OPTIONAL Bonus - adding inventory records 
