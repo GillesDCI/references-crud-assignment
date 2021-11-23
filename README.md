@@ -4,24 +4,45 @@ This exercise will allow you to recap what we've learned so far.
 ## Assignment
 Create a new Backend API fully from scratch
 
-###  Install the following modules: 
-+ mongoose
+### Install the following modules: 
++ mongoose 
 + express
 + dotenv
 + cors
 
-### 1. Set up your server
-Set up the server.js and configure everything accordingly. Prepare already a models and routes folder. 
-+ Set up the .env for mongodb
-+ Connect the server to the database 
-+ Configure folders 
+`npm install mongoose express dotenv cors`
 
-### 2. Assignment
+### 1. Set up your server
+Set up the `server.js` and configure everything accordingly. You will notice some things are missing, try to find what and wire up. 
++ Set up the .env for mongodb and PORT number
++ Configure imports  
++ Get it up and running 
+
+### 2. Thinking out our Schemas 
+First we need to setup our database schemas, this application needs two schemas a `CustomerSchema` and an `OrderSchema`. For each order being made we would like to track which customer made this order. We would like to do this by reference. 
+
+
+#### Task 1. Creating our Customer Schema  
+Open inside folder `models` the `Customer.js` file. Modify this file in such way that the customerschema has a `firstname`, `lastname` and `email`. 
+You can add in more fields if you like. 
+
+#### Task 2. Creating our Order Schema  
+Open inside folder `models` the `Order.js` file. Modify this file in such way that the orderSchema has a `order_description`, `productname`, `price`, `vat` and `total_incl_vat` and a `customer` field. Make sure the customer field is a reference to our Customer Schema. 
+
+Example of a reference: 
+
+````javascript
+   user:{type: Schema.Types.ObjectId, ref:'User'}
+````
+
+
+
+### 3. Assignment CRUD 
 Build an API for order management. The following functionality is required: 
 
 #### Task 1. Inserting customers 
 Create a new `post` route which allows you to add a new customer into the database. 
-Make sure the customer has a `firstname`, `lastname` and `email` in the customerschema.
+
 
 #### Task 2. Updating customers by id 
 Create a new `patch` route which allows you to update the customer by ID.  
