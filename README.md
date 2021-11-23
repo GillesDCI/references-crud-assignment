@@ -2,7 +2,7 @@
 This exercise will allow you to recap what we've learned so far. 
 
 ## Assignment
-Create a new Backend API fully from scratch
+Let's build an order management API. 😊
 
 ### Install the following modules: 
 + mongoose 
@@ -59,7 +59,7 @@ Make sure there's a reference to the User who ordered the order.
 Create a new `get` route which allows you to fetch a list of all the orders in the system. 
 Use the `limit` and `skip` methods to paginate the results. 
 
-#### Task 6 List orders by Customer
+#### Task 6. List orders by Customer
 Create a new `get` route which allows you to fetch a list of all the orders by customer. Make sure you include the customer using the `populate` function.
 
 Example of query using `skip`, `limit` and `populate`. 
@@ -72,7 +72,7 @@ Example of query using `skip`, `limit` and `populate`.
 
 
 
-### 3. OPTIONAL Bonus - adding inventory records
+### 3. OPTIONAL Bonus - adding inventory records 
 + Inserting Inventory records
 + Check how many products are left in the inventory by product ID .
 + Update the inventory with inStock field -1 when order is sold. 
