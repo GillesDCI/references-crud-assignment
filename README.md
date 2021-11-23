@@ -62,7 +62,7 @@ Use the `limit` and `skip` methods to paginate the results.
 #### Task 6. List orders by Customer
 Create a new `get` route which allows you to fetch a list of all the orders by customer. Make sure you include the customer using the `populate` function.
 
-Example of query using `skip`, `limit` and `populate`. 
+Example of query using `skip`, `limit` and `populate`.
 ````javascript
     const results = await mySchema.find({})
     .populate('other')
@@ -73,8 +73,6 @@ Example of query using `skip`, `limit` and `populate`.
 \
 \
 \
-\
-
 
 ### 3. OPTIONAL Bonus - adding inventory records 
 + Inserting Inventory records
